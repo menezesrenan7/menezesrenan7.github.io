@@ -20,6 +20,10 @@
             font-size: 3em;
             font-weight:900;
             }
+
+        #imagem-perfil {
+            border-radius: 50%;
+        }
         
         h1,h2,h3,h4,h5,h6 {color: #fefae0;}
 
@@ -32,6 +36,17 @@
             line-height: 2em;
             background-color: #335c67;
             color: #edf6f9;
+            text-align: center;
+        }
+
+        #indice li {
+            display:inline-block;
+            background-color: #f1faee;
+            color: #283d3b;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 5px 10px;
+            font-weight: bolder;
         }
 
         a {
@@ -49,16 +64,21 @@
 </head>
 <body>
     <h1 id="nome">Renan Menezes de Ávila Martins</h1>
-    
-    <img id="imagem-perfil" src="Image-1.jpeg" width="200px" alt="Selfie de Renan Menezes">
 
-    <h2>Índice</h2>
-    <ol>
-                    <li><a href="#descricao-pessoal">Descrição pessoal</a></li>
-            <li><a href="#perfil">Perfil profissional</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
-            <li><a href="#pagina-profissional">Página de perfil profissional</a></li>
-    </ol>
+    <!-- ÍNDICE -->
+
+    <nav id="indice"> 
+        <ul>
+                <li><a href="#descricao-pessoal">Descrição pessoal</a></li>
+                <li><a href="#perfil">Perfil profissional</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#pagina-profissional">Página de perfil profissional</a></li>
+        </ul>
+    </nav>
+
+    <img id="imagem-perfil" src="Renan.png" width="200px" alt="Selfie de Renan Menezes">
+
+    <!-- DESCRIÇÃO PESSOAL -->
 
     <p id="descricao-pessoal">
         Nascido em <strong>Paulo Afonso-BA</strong>, tenho <strong>29 anos</strong> e moro em <strong>Recife-PE</strong> (desde que me entendo por gente rsrs).
@@ -68,6 +88,8 @@
         Descobri, porém, ainda na faculdade, uma paixão pelo mundo da programação, iniciando neste ano um curso de formação em <strong>web development</strong> na Trybe.
     </p>
 
+    <!-- PERFIL PROFISSIONAL -->
+    
     <h2 id="perfil">Perfil profissional:</h2>
 
     <ul>
@@ -79,8 +101,11 @@
         </em>
     </ul>
     
+    <!-- HABILIDADES -->
+
     <h2 id="habilidades">Habilidades:</h2>
 
+    <div id="teste1"></div>
     <ul>
         <em>
             <li>Método PDCA;</li>
@@ -89,6 +114,9 @@
             <li>Excel Avançado.</li>
         </em>
     </ul>
+    </div>
+
+    <!-- BOTÕES FINAIS -->
 
     <p><a class="botao" href="#imagem-perfil"><strong>Acessar foto de perfil</strong></a></p>
 
