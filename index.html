@@ -3,41 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Sobre mim</title>
+
+    <!-- Font-family Montserrat -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <!-- Font-family Rajdhani -->
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet"> 
+
+    <style>
+        #nome {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 3em;
+            font-weight:900;
+            }
+        
+        h1,h2,h3,h4,h5,h6 {color: #fefae0;}
+
+        #descricao-pessoal {
+            font-family: Rajdhani, sans-serif;
+            
+            }
+        
+        body {
+            line-height: 2em;
+            background-color: #335c67;
+            color: #edf6f9;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .botao {
+            background-color: #f1faee;
+            color: #283d3b;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Renan Menezes de Ávila Martins</h1>
+    <h1 id="nome">Renan Menezes de Ávila Martins</h1>
     
     <img id="imagem-perfil" src="Image-1.jpeg" width="200px" alt="Selfie de Renan Menezes">
 
+    <h2>Índice</h2>
     <ol>
-        <h2>Índice</h2>
-
-            <li href="descricao-pessoal">Descrição pessoal</li>
-            <li href="habilidades">Habilidades</li>
-            <li href="pagina-profissional">Página de perfil profissional</li>
-
+                    <li><a href="#descricao-pessoal">Descrição pessoal</a></li>
+            <li><a href="#perfil">Perfil profissional</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#pagina-profissional">Página de perfil profissional</a></li>
     </ol>
 
-    <p id="descricao-pessoal">Nascido em Paulo Afonso-BA, tenho 29 anos e moro em Recife-PE (desde que me entendo por gente rsrs).
+    <p id="descricao-pessoal">
+        Nascido em <strong>Paulo Afonso-BA</strong>, tenho <strong>29 anos</strong> e moro em <strong>Recife-PE</strong> (desde que me entendo por gente rsrs).
         <br> 
         Formado em Administração pela UFPE, trabalhei em várias indústrias, dentre elas a de consultoria de gestão. 
         <br> 
-        Descobri, porém, ainda na faculdade, uma paixão pelo mundo da programação, iniciando neste ano um curso de formação em web development na Trybe.
+        Descobri, porém, ainda na faculdade, uma paixão pelo mundo da programação, iniciando neste ano um curso de formação em <strong>web development</strong> na Trybe.
     </p>
 
-    <h2 id="habilidades">Habilidades:</h2>
+    <h2 id="perfil">Perfil profissional:</h2>
 
     <ul>
         <em>
             <li>Foco em resultados;</li>
+            <li>Proatividade;</li>
             <li>Trabalho em equipe;</li>
             <li>Resiliência;</li>
         </em>
     </ul>
     
-    <p><a href="imagem-perfil"><strong>Acessar foto de perfil</strong></a></p>
+    <h2 id="habilidades">Habilidades:</h2>
 
-    <p><a id="pagina-profissional" href="https://www.linkedin.com/in/renan-menezes-3b6618206/" target="_blank"><strong>Acesse meu perfil profissional</strong></a></p>
+    <ul>
+        <em>
+            <li>Método PDCA;</li>
+            <li>Gestão por resultados;</li>
+            <li>Gerenciamento pelas Diretrizes;</li>
+            <li>Excel Avançado.</li>
+        </em>
+    </ul>
+
+    <p><a class="botao" href="#imagem-perfil"><strong>Acessar foto de perfil</strong></a></p>
+
+    <p><a id="pagina-profissional" class="botao" href="https://www.linkedin.com/in/renan-menezes-3b6618206/" target="_blank"><strong>Acesse minha página LinkedIn</strong></a></p>
 
 </body>
 </html>
